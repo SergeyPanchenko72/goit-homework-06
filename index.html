@@ -22,7 +22,7 @@
   <body>
     <!--HEADER-->
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header-container">
         <nav class="page-navigation">
           <a class="link logo" href="./index.html"
             >Web<span class="logo-part-heder">Studio</span></a
@@ -44,6 +44,11 @@
             </li>
           </ul>
         </address>
+        <button class="mobile-menu-button" type="button">
+          <svg class="mobile-menu-button-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--MAIN-->
@@ -111,7 +116,7 @@
           </ul>
         </div>
       </section>
-      <!--OUR TEAM-->
+      <!----------------------------OUR TEAM---------------------------->
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -119,6 +124,7 @@
             <li class="team-item">
               <img
                 class="team-picture"
+                srcset="./images/Mark_Guerrero@2x.jpg 2x"
                 src="./images/Mark_Guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -162,6 +168,7 @@
             <li class="team-item">
               <img
                 class="team-picture"
+                srcset="./images/Tom_Ford@2x.jpg 2x"
                 src="./images/Tom_Ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -205,6 +212,7 @@
             <li class="team-item">
               <img
                 class="team-picture"
+                srcset="./images/Camila_Garcia@2x.jpg 2x"
                 src="./images/Camila_Garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -248,6 +256,7 @@
             <li class="team-item">
               <img
                 class="team-picture"
+                srcset="./images/Daniel_Wilson@2x.jpg 2x"
                 src="./images/Daniel_Wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -291,7 +300,7 @@
           </ul>
         </div>
       </section>
-      <!--PORTFILIO-->
+      <!--------------------------------------PORTFILIO-------------------------------->
       <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -300,9 +309,17 @@
               <div class="overlay-wrapper">
                 <img
                   class="portfolio-picture"
-                  src="./images/banking-app.jpg"
+                  srcset="
+                    ./images/Banking_App_desk.jpg    360w,
+                    ./images/Banking_App_tab.jpg     356w,
+                    ./images/Banking_App_mob.jpg     288w,
+                    ./images/Banking_App_desk@2x.jpg 720w,
+                    ./images/Banking_App_tab@2x.jpg  712w,
+                    ./images/Banking_App_mob@2x.jpg  576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Banking_App _desk.jpg"
                   alt="Banking App"
-                  width="360"
                 />
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -318,9 +335,17 @@
               <div class="overlay-wrapper">
                 <img
                   class="portfolio-picture"
-                  src="./images/cashless-payment.jpg"
+                  srcset="
+                    ./images/Cashless_Payment_desk.jpg    360w,
+                    ./images/Cashless_Payment_tab.jpg     356w,
+                    ./images/Cashless_Payment_mob.jpg     288w,
+                    ./images/Cashless_Payment_desk@2x.jpg 720w,
+                    ./images/Cashless_Payment_tab@2x.jpg  712w,
+                    ./images/Cashless_Payment_mob@2x.jpg  576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Cashless_Payment_desk.jpg"
                   alt="Cashless Payment"
-                  width="360"
                 />
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -336,9 +361,17 @@
               <div class="overlay-wrapper">
                 <img
                   class="portfolio-picture"
-                  src="./images/meditation-app.jpg"
+                  srcset="
+                    ./images/Meditation_App_desk.jpg    360w,
+                    ./images/Meditation_App_tab.jpg     356w,
+                    ./images/Meditation_App_mob.jpg     288w,
+                    ./images/Meditation_App_desk@2x.jpg 720w,
+                    ./images/Meditation_App_tab@2x.jpg  712w,
+                    ./images/Meditation_App_mob@2x.jpg  576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Meditation_App_desk.jpg"
                   alt="Meditation App"
-                  width="360"
                 />
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -354,9 +387,17 @@
               <div class="overlay-wrapper">
                 <img
                   class="portfolio-picture"
-                  src="./images/taxi-service.jpg"
+                  srcset="
+                    ./images/Taxi_Service_desk.jpg    360w,
+                    ./images/Taxi_Service_tab.jpg     356w,
+                    ./images/Taxi_Service_mob.jpg     288w,
+                    ./images/Taxi_Service_desk@2x.jpg 720w,
+                    ./images/Taxi_Service_tab@2x.jpg  712w,
+                    ./images/Taxi_Service_mob@2x.jpg  576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Taxi_Service_desk.jpg"
                   alt="Taxi Service"
-                  width="360"
                 />
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -372,9 +413,17 @@
               <div class="overlay-wrapper">
                 <img
                   class="portfolio-picture"
-                  src="./images/screen-Illustrations.jpg"
+                  srcset="
+                    ./images/Screen_Illustrations_desk.jpg    360w,
+                    ./images/Screen_Illustrations_tab.jpg     356w,
+                    ./images/Screen_Illustrations_mob.jpg     288w,
+                    ./images/Screen_Illustrations_desk@2x.jpg 720w,
+                    ./images/Screen_Illustrations_tab@2x.jpg  712w,
+                    ./images/Screen_Illustrations_mob@2x.jpg  576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Screen_Illustrations_desk.jpg"
                   alt="Screen Illustrations"
-                  width="360"
                 />
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -390,9 +439,17 @@
               <div class="overlay-wrapper">
                 <img
                   class="portfolio-picture"
-                  src="./images/online-courses.jpg"
+                  srcset="
+                    ./images/Online_Courses_desk.jpg    360w,
+                    ./images/Online_Courses_tab.jpg     356w,
+                    ./images/Online_Courses_mob.jpg     288w,
+                    ./images/Online_Courses_desk@2x.jpg 720w,
+                    ./images/Online_Courses_tab@2x.jpg  712w,
+                    ./images/Online_Courses_mob@2x.jpg  576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/Online_Courses_desk.jpg"
                   alt="Online Courses"
-                  width="360"
                 />
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -408,11 +465,11 @@
         </div>
       </section>
     </main>
-    <!--FOOTER-->
+    <!------------------------------------------FOOTER-------------------------------->
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer-logo-container">
-          <a class="link logo" href="./index.html"
+          <a class="link logo logo-footer" href="./index.html"
             >Web<span class="logo-part-footer">Studio</span></a
           >
           <p class="footer-text">
@@ -472,9 +529,9 @@
       </div>
     </footer>
 
-    <!-- ___________MODAL____________ -->
+    <!-- ___________________________MODAL___________________________ -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop is-pen">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="modal-close-button-icon" width="8" height="8">
@@ -556,6 +613,75 @@
           </div>
           <button class="form-button button" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <!-- --------------MODAL------------- -->
+
+    <!-- ----------MOBILE MENU--------------- -->
+    <div class="mobile-menu-modal is-open">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-modal-close-button" type="button">
+          <svg class="mobile-menu-modal-close-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1" />
+          </svg>
+        </button>
+        <nav class="mobile-menu-modal-navigation">
+          <ul class="mobile-menu-modal-navigation-list list">
+            <li>
+              <a class="mobile-menu-modal-navigation-link link active" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li><a class="mobile-menu-modal-navigation-link link" href="">Portfolio</a></li>
+            <li><a class="mobile-menu-modal-navigation-link link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="mobile-menu-modal-contact-header">
+          <ul class="mobile-menu-modal-contact-list list">
+            <li>
+              <a class="mobile-menu-modal-contact-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu-modal-contact-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="social-link">
+          <ul class="mobile-menu-modal-icon-list list">
+            <li class="mobile-menu-modal-icon-item">
+              <a href="" class="mobile-menu-modal-icon-link">
+                <svg class="mobile-menu-modal-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-modal-icon-item">
+              <a href="" class="mobile-menu-modal-icon-link">
+                <svg class="mobile-menu-modal-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-modal-icon-item">
+              <a href="" class="mobile-menu-modal-icon-link">
+                <svg class="mobile-menu-modalicon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-modal-icon-item">
+              <a href="" class="mobile-menu-modal-icon-link">
+                <svg class="mobile-menu-modal-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
