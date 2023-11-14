@@ -1117,6 +1117,10 @@ button {
   /* ================/FEATURE DESKTOP================== */
 
   /* ===============OUR TEAM DESKTOP=================== */
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .team-list {
     gap: 24px;
   }
