@@ -49,10 +49,11 @@ button {
   overflow: hidden;
 }
 .container {
-  /* width: 320px;
-  margin: 0 auto; */
   padding-left: 16px;
   padding-right: 16px;
+}
+.page-header {
+  padding: 24px 0;
 }
 @media screen and (min-width: 320px) {
   .container {
@@ -196,8 +197,8 @@ button {
 /* ==============OUR TEAM MOBILE=============== */
 .team {
   background: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .team-title {
   color: #2e2f42;
@@ -740,6 +741,9 @@ button {
 .mobile-menu-container {
   position: relative;
   padding: 72px 16px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu-modal-close-button {
   position: absolute;
@@ -771,7 +775,7 @@ button {
   fill: #fff;
 }
 .mobile-menu-modal-navigation {
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 .mobile-menu-modal-navigation-list {
   display: flex;
@@ -797,7 +801,7 @@ button {
   margin-bottom: 48px;
 }
 .mobile-menu-modal-contact-link {
-  color: inherit;
+  color: #434455;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2; /* 120% */
@@ -852,6 +856,9 @@ button {
   .container {
     width: 768px;
   }
+  .page-header {
+    padding: 0;
+  }
   .menu {
     display: flex;
   }
@@ -883,7 +890,7 @@ button {
 
   .contact-link {
     color: inherit;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -940,7 +947,7 @@ button {
     screen and (min-device-psxel-ratio: 2) {
     .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero-image-desktop@2x.jpg);
+        url(../images/hero-image-tablet@2x.jpg);
     }
   }
 
@@ -954,7 +961,7 @@ button {
 
   /* ================FEATURE TABLET================== */
   .feature-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
   .feature-title {
     text-align: left;
@@ -1060,6 +1067,10 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .contact-link {
+    font-size: 16px;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
